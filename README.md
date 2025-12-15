@@ -65,20 +65,29 @@ Chatbot_with_Web/
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository using HTTPS (recommended):
 
    ```bash
-   git clone https://github.com/yourusername/chatbot-with-web.git
-   cd chatbot-with-web
+   git clone https://github.com/Surendar24/Agentic-Chatbot-with-web-search-functionality.git
+   cd Agentic-Chatbot-with-web-search-functionality
+   ```
+
+   Or using SSH (if you have SSH keys set up):
+
+   ```bash
+   git clone git@github.com:Surendar24/Agentic-Chatbot-with-web-search-functionality.git
+   cd Agentic-Chatbot-with-web-search-functionality
    ```
 
 2. Create and activate a virtual environment:
 
    ```bash
-   python -m venv .venv
    # On Windows:
+   python -m venv .venv
    .venv\Scripts\activate
+
    # On macOS/Linux:
+   python3 -m venv .venv
    source .venv/bin/activate
    ```
 
@@ -90,11 +99,23 @@ Chatbot_with_Web/
 
 4. Set up environment variables:
    Create a `.env` file in the root directory with your API keys:
+
    ```
-   GROQ_API_KEY=your_groq_api_key
-   OPENAI_API_KEY=your_openai_api_key  # If using OpenAI
-   TAVILY_API_KEY=your_tavily_api_key  # For web search
+   # Required
+   GROQ_API_KEY=your_groq_api_key_here
+
+   # Optional
+   OPENAI_API_KEY=your_openai_api_key_here
+   TAVILY_API_KEY=your_tavily_api_key_here
    ```
+
+5. Run the application:
+
+   ```bash
+   streamlit run app.py
+   ```
+
+6. Open your browser and navigate to `http://localhost:8501`
 
 ## Usage
 
